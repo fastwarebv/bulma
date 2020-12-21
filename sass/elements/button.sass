@@ -49,7 +49,8 @@ $button-borderless-colors: ('white','light','black','text','primary','link','inf
 
 // The button sizes use mixins so they can be used at different breakpoints
 =button-small
-  border-radius: $radius-small
+  &:not(.is-rounded)
+    border-radius: $radius-small
   font-size: $size-small
 =button-normal
   font-size: $size-normal
